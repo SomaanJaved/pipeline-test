@@ -1,0 +1,35 @@
+pipeline{
+    agent any
+    environment {
+  person = "ali"
+}
+
+    stages{
+        
+        
+        stage('Build'){
+            
+            steps{
+                
+                echo"Building"
+                
+                
+            }
+            
+        }
+        
+        stage('person')
+        {
+            steps{
+                echo"my fav ${person}"
+            }
+        }
+         stage('bat')
+        {
+            steps{
+                bat 'dir'
+            }
+        }
+        
+    }
+}
