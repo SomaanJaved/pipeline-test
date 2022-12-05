@@ -30,6 +30,12 @@ pipeline{
                 bat 'dir'
             }
         }
+          stage('cat')
+        {
+            steps{
+                echo 'this is cat'
+            }
+        }
         
     }
 }
